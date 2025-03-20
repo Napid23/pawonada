@@ -1,0 +1,87 @@
+:root {
+    --hijau: #16C47F;
+    --kuning: #FFD65A;
+    --orange: #FF9D23;
+    --merah: #F93827;
+}
+
+body{
+    font-family: "Sour Gummy", sans-serif;
+}
+
+nav{
+    font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+    background-color: transparent;
+    transition: background-color 0.3s ease-in-out, padding 0.3s ease-in-out;
+}
+
+.navbar.scrolled {
+    background-color: rgba(255, 248, 220, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 10px 20px;
+}  
+
+.poppins-font{
+    font-family: "Poppins", sans-serif;
+}
+
+.shadow-border {
+    border: 2px solid black;
+    box-shadow: 5px 5px 0px black;
+}  
+
+.btn-hero-pesan{
+    color: white;
+    background-color: var(--orange);
+}
+
+.btn-hero-pesan:hover{
+    color: var(--orange);
+    background-color: white;
+    border: 2px solid black;
+    transition: 0.3s ease;
+}
+
+.btn-hero-menu{
+    color: var(--orange);
+    background-color: white;
+}
+
+.btn-hero-menu:hover{
+    color: white;
+    background-color: var(--orange);
+    border: 2px solid black;
+    transition: 0.3s ease;
+}
+
+.text-hero-up{
+    font-size: 2.7rem;
+}
+
+.card-keunggulan {
+    transition: 0.3s ease-in-out;
+    height: 19rem;
+}
+
+.card-keunggulan:hover{
+    transform: translate(4px, 4px);
+    border: none;
+    box-shadow: none;
+    color: var(--orange);
+}
+
+@media (max-width: 767px) {
+    .text-hero-up{
+        font-size: 2rem;
+    }
+
+    .btn-hero-pesan,
+    .btn-hero-menu{
+        width: 100%;
+    }
+}
+  
