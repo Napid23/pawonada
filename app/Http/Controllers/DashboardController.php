@@ -10,4 +10,9 @@ class DashboardController extends Controller
         $title = "Home";
         return view('user.dashboard.index', compact('title'));
     }
+
+    public function menu(){
+        $title = "Menu";
+        return view('user.dashboard.menu', compact('title'));
+    }
 }

@@ -1,4 +1,4 @@
-<footer class="py-4" style="background-color: #fffdf8">
+<footer class="py-4">
     <div class="container">
       <div class="row">
         <!-- Kolom 1: Brand & Deskripsi -->

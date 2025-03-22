@@ -6,7 +6,11 @@
 }
 
 body{
-    font-family: "Sour Gummy", sans-serif;
+    font-family: "Archivo Black", sans-serif;
+    background-color: #fafafa; /* Sesuaikan dengan warna utama */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1) 1px, transparent 1px),
+                      linear-gradient(90deg, rgba(0, 0, 0, 0.1) 1px, transparent 1px);
+    background-size: 70px 70px; /* Ukuran grid, bisa disesuaikan */
 }
 
 nav{
@@ -29,6 +33,10 @@ nav{
     font-family: "Poppins", sans-serif;
 }
 
+.pstp-font{
+    font-family: "Press Start 2P", system-ui;
+}
+
 .shadow-border {
     border: 2px solid black;
     box-shadow: 5px 5px 0px black;
@@ -44,6 +52,7 @@ nav{
     background-color: white;
     border: 2px solid black;
     transition: 0.3s ease;
+    animation: none;
 }
 
 .btn-hero-menu{
@@ -58,30 +67,55 @@ nav{
     transition: 0.3s ease;
 }
 
+.btn-hover{
+    transition: 0.3s ease-in-out;
+}
+
+.btn-hover:hover{
+    transform: translate(4px, 4px);
+    box-shadow: none;
+}
+
 .text-hero-up{
-    font-size: 2.7rem;
+    font-size: 2rem;
 }
 
 .card-keunggulan {
-    transition: 0.3s ease-in-out;
-    height: 19rem;
+    transition: 0.2s ease-in-out;
 }
 
 .card-keunggulan:hover{
     transform: translate(4px, 4px);
     border: none;
     box-shadow: none;
-    color: var(--orange);
+}
+
+.animation-floating {
+    animation: floating 1.5s infinite ease-in-out;
+}
+
+.rotate-animation:hover{
+    transform: rotate(7deg);
 }
 
 @media (max-width: 767px) {
     .text-hero-up{
-        font-size: 2rem;
+        font-size: 1rem;
     }
 
     .btn-hero-pesan,
     .btn-hero-menu{
         width: 100%;
     }
+
+    .card-keunggulan{
+        width: 80%;
+    }
+}
+
+@keyframes floating {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
 }
   
