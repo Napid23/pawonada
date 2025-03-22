@@ -21,8 +21,8 @@
         <!-- Kolom 3: Sosial Media -->
         <div class="col-md-4">
           <h5 class="fw-bold">Ikuti Kami</h5>
-          <a href="#" class="text-muted me-3"><i class="fa-brands fa-square-instagram fs-4"></i></a>
-          <a href="" class="text-muted me-3"><i class="fa-brands fa-square-whatsapp fs-4"></i></a>
+          <a href="https://www.instagram.com/pawonada/" target="_blank" class="text-muted me-3"><i class="fa-brands fa-square-instagram fs-4"></i></a>
+          <a href="http://wa.me/+6285333122279" target="_blank" class="text-muted me-3"><i class="fa-brands fa-square-whatsapp fs-4"></i></a>
         </div>
       </div>
   

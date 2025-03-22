@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#FFD65A">
     <title>Pawonada || {{ isset($title) ? $title : '' }}</title>
     <link href="{{ asset('img/assets/pawonada_icon.png') }}" rel="icon">
     {{-- bootstrap --}}
@@ -26,6 +27,16 @@
     @yield('content')
 
     @include('user.partials.footer')
+
+    {{-- floating whatsapp --}}
+    <div class="whatsapp-button btn-hover">
+        <a href="http://wa.me/+6285333122279" target="_blank" class="text-decoration-none text-light">
+            <i class="fa-brands fa-whatsapp fs-4 text-light" style="margin-right: 5px"></i>
+            WhatsApp
+        </a>
+    </div>    
+    {{-- end floating whatsapp --}}
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     {{-- j query --}}
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
